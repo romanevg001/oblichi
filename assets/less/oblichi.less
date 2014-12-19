@@ -1,0 +1,112 @@
+@import "../../bower_components/bootstrap/less/bootstrap";
+@import "lesshat";
+@import "main";
+
+body {
+  font-family: "Trebuchet MS";
+}
+
+.layout {
+  .box-shadow(18px 0 10px rgba(0, 0, 0, .1));
+}
+header {
+  .head-top-bar {
+    .background-image(linear-gradient(to bottom, #2172ca 0%, #1a59bb 100%));
+    height: 38px;
+    overflow: hidden;
+
+    .head-top-bar-handler {
+      position: relative;
+      height: 38px;
+      //overflow: hidden;
+      background: #064697;
+      &:before {
+        .before;
+        background: #064697;
+        .size(38px);
+        right: -12px;
+        left: auto;
+        .rotate(45deg);
+      }
+    }
+    .head-top-bar-sponsors {
+      font-size: 12px;
+      line-height: 3em;
+      color: #85bdfd;
+      padding-left: 30px;
+      .head-top-bar-sponsor {
+        font-weight: bold;
+        color:#fff;
+        font-size: 14px;
+      }
+    }
+    .head-top-bar-sponsors-all {
+      float: right;
+      border-left: 1px solid rgba(255,255,255,.3);
+      .box-shadow(-1px 0 0 0 #1d2528);
+      color: #9fd3e9;
+      
+    }
+  }
+}
+.btn-blue {
+  border: 1px solid #04397a;
+  .box-shadow(0 1px 0 0 rgba(255,255,255,.1));
+  .background-image(linear-gradient(to bottom, #2885ce 30%, #034692 70%));
+  color:#139fd5;
+  font-size: 20px;
+  padding: 0;
+}
+.logo {
+  background: url("../i/sprite.png") no-repeat;
+  .size(190px,96px);
+  color: #a8a9a9;
+  font-size: 12.5px;
+  padding: 38px 0 0 55px;
+  margin: 30px 0 0 9px;
+}
+.col-left {
+  width: 225px;
+  float: left;
+}
+.col-right {
+  width: 300px;
+  float: right;
+}
+.statistics {
+  list-style: none;
+  border: 1px solid #a1afb9;
+  .border-bottom-left-radius(5px);
+  .border-bottom-right-radius(5px);
+  padding: 0;
+  margin: 0 20px;
+  li {
+    .background-image(linear-gradient(to bottom, #a9e1fa 0%, #99d0e8 100%));
+     border-bottom: 1px solid #3f7ebb;
+    .box-shadow(inset 0 1px 0 1px #b5e6fc);
+    color:#004a80;
+    text-shadow: -1px 0 0 1px rgba(255,255,255,.1);
+    line-height: 2.2em;
+    &:first-child {
+      border-bottom: 1px solid #0054a6;
+      font-weight: bold;
+    }
+    &:last-child {
+      border-bottom: 0 solid;
+    }
+  }
+}
+
+
+/*~~~~~~~~~~~~~~icon~~~~~~~~~~~~*/
+.obl-money {
+  background: url("../i/sprite.png") no-repeat -50px -450px;
+  &:before {
+    content: "\2709";
+  }
+}
+.obl-people {
+  background: url("../i/sprite.png") no-repeat 0 -250px;
+}
+.obl-rupor {background: url("../i/sprite.png") no-repeat 0 -400px;}
+.obl-pencil {background: url("../i/sprite.png") no-repeat 0 -350px;}
